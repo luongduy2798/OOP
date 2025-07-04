@@ -5,6 +5,7 @@
 ## 📁 Cấu trúc file
 
 ### 1. `01-basic-class.ts` - Class cơ bản
+
 - **Chủ đề**: Class, Constructor, Getter/Setter, Encapsulation cơ bản
 - **Nội dung**:
   - Khai báo class với thuộc tính private
@@ -14,6 +15,7 @@
   - Phương thức hiển thị thông tin
 
 ### 2. `02-inheritance.ts` - Tính kế thừa
+
 - **Chủ đề**: Inheritance, Abstract Class, Polymorphism
 - **Nội dung**:
   - Abstract class `DongVat` làm lớp cha
@@ -23,6 +25,7 @@
   - Override phương thức từ lớp cha
 
 ### 3. `03-encapsulation.ts` - Tính đóng gói
+
 - **Chủ đề**: Encapsulation, Access Modifiers, Data Protection
 - **Nội dung**:
   - Class `TaiKhoanNganHang` với thuộc tính private
@@ -32,6 +35,7 @@
   - Getter/Setter với logic kiểm tra
 
 ### 4. `04-polymorphism.ts` - Tính đa hình
+
 - **Chủ đề**: Polymorphism, Interface, Type Checking
 - **Nội dung**:
   - Multiple interfaces: `ICoBan`, `IChet`, `ISinhSan`
@@ -41,6 +45,7 @@
   - Method overloading simulation
 
 ### 5. `05-interface-abstract.ts` - Interface và Abstract Class
+
 - **Chủ đề**: Interface vs Abstract Class, Multiple Implementation
 - **Nội dung**:
   - Interface: `IHinhHoc`, `IVeHinh`, `IMauSac`
@@ -50,6 +55,7 @@
   - Kết hợp interface và inheritance
 
 ### 6. `06-composition-aggregation.ts` - Composition và Aggregation
+
 - **Chủ đề**: Object Relationships, Has-a vs Uses-a
 - **Nội dung**:
   - **Composition**: `XeHoi` có `DongCo` và `BanhXe` (không thể tồn tại độc lập)
@@ -58,6 +64,7 @@
   - Quản lý lifecycle của đối tượng
 
 ### 7. `07-design-patterns.ts` - Design Patterns
+
 - **Chủ đề**: Common Design Patterns
 - **Nội dung**:
   - **Singleton**: `DatabaseConnection` - đảm bảo chỉ có 1 instance
@@ -67,48 +74,54 @@
 
 ## 🚀 Cách chạy
 
-3. **Chạy tất cả file**:
-   ```bash
-   # Chạy từng file JavaScript
-   node 01-basic-class.js
-   node 02-inheritance.js
-   # ... và tiếp tục
-   ```
+```bash
+# Chạy từng file JavaScript
+node 01-basic-class.js
+node 02-inheritance.js
+# ... và tiếp tục
+```
 
 ## 📚 Khái niệm chính
 
 ### 1. **Class và Object**
+
 - Class là template/blueprint để tạo object
 - Object là instance của class
 - Constructor để khởi tạo object
 
 ### 2. **Tính đóng gói (Encapsulation)**
+
 - `private`: chỉ truy cập được trong class
 - `protected`: truy cập được trong class và lớp con
 - `public`: truy cập được từ mọi nơi
 - Getter/Setter để kiểm soát truy cập
 
 ### 3. **Tính kế thừa (Inheritance)**
+
 - Lớp con kế thừa thuộc tính và phương thức từ lớp cha
 - `extends` keyword để kế thừa
 - `super()` để gọi constructor/method của lớp cha
 - `abstract` class không thể tạo instance trực tiếp
 
 ### 4. **Tính đa hình (Polymorphism)**
+
 - Cùng một interface nhưng có nhiều implementation khác nhau
 - Method overriding: ghi đè phương thức
 - Interface để định nghĩa contract
 
 ### 5. **Interface vs Abstract Class**
+
 - **Interface**: chỉ định nghĩa signature, không có implementation
 - **Abstract Class**: có thể có cả abstract methods và concrete methods
 - Một class có thể implement nhiều interface nhưng chỉ extend một class
 
 ### 6. **Composition vs Aggregation**
+
 - **Composition**: "has-a" relationship, object con không thể tồn tại độc lập
 - **Aggregation**: "uses-a" relationship, object con có thể tồn tại độc lập
 
 ### 7. **Design Patterns**
+
 - **Singleton**: đảm bảo chỉ có một instance
 - **Factory**: tạo object mà không cần biết class cụ thể
 - **Observer**: pattern thông báo thay đổi
