@@ -67,25 +67,8 @@
 
 ## 🚀 Cách chạy
 
-1. **Cài đặt TypeScript**:
-   ```bash
-   npm install -g typescript
-   ```
-
-2. **Chạy từng file**:
-   ```bash
-   # Biên dịch và chạy
-   tsc 01-basic-class.ts && node 01-basic-class.js
-   
-   # Hoặc sử dụng ts-node (nếu đã cài)
-   npx ts-node 01-basic-class.ts
-   ```
-
 3. **Chạy tất cả file**:
    ```bash
-   # Biên dịch tất cả
-   tsc *.ts
-   
    # Chạy từng file JavaScript
    node 01-basic-class.js
    node 02-inheritance.js
